@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.microsoft.z3.Context;
+import com.microsoft.z3.Expr;
 import com.microsoft.z3.FuncDecl;
 
 import jayhorn.solver.princess.PrincessProverFactory;
@@ -184,6 +185,8 @@ public class Main {
 		System.out.println(p.substitute(interpolant, new ProverExpr[] { b },
 				new ProverExpr[] { a }));
 	}
+
+	
 
 	public void testHorn(Z3Prover p) {
 		p.setHornLogic(true);
